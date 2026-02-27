@@ -1,0 +1,124 @@
+# Default example personas for Personalab (data/examples/personas.yml).
+# Override or extend via ./prompts/personas.yml in your project.
+# Each key (e.g. daniperez) is the persona key used by scripts (gen_anchors, gen_ideas, gen_images).
+
+daniperez:
+  id: "dani_perez_peru"
+  name: "Daniela 'Dani' Perez"
+  location: "Lima, Peru"
+  vibe: "Lifestyle & Urban Chic"
+  physical_description:    
+    age_range: "23"
+    ancestry_expression:
+      region: "coastal Peruvian"
+      phenotype_bias: "mestiza light olive"
+      avoid_stereotype: true
+    facial_structure:
+      face_shape: "slightly oval with soft jaw taper"
+      cheekbone_projection: "moderate and soft"
+      jaw_width_ratio: "medium"
+      chin_shape: "rounded with subtle forward projection"
+    eyes:
+      color: "medium brown"
+      shape: "almond"
+      outer_corner_tilt: "very slightly downward"
+      spacing: "average"
+      asymmetry: "subtle natural difference between eyelids"
+    nose:
+      bridge: "straight"
+      width: "medium"
+      tip: "soft rounded"
+    lips:
+      upper_lip: "medium thickness"
+      lower_lip: "slightly fuller"
+      cupid_bow: "soft"
+    eyebrows:
+      density: "medium"
+      arch: "soft natural arch"
+      thickness: "natural, not thin"
+    skin:
+      tone: "light olive warm undertone"
+      variation: "natural uneven tone + tiny sun speckles"
+      texture: "visible pores"
+      sun_exposure: "subtle natural tan"
+    hair:
+      base_color: "dark blonde"
+      root_color: "medium brown"
+      wave_pattern: "loose natural waves"
+      density: "medium-high"
+      parting: "center or slightly off-center"
+    body:
+      build: "athletic but natural"
+      shoulder_width: "proportionate"
+      muscle_definition: "subtle"
+    proportions:
+      eye_to_eye_distance: "one eye width"
+      nose_width_relative_to_eyes: "slightly narrower"
+      face_height_to_width_ratio: "1.4"
+  
+  personality: "Confident, bubbly, professional, proud of Peruvian heritage. Uses 'chévere' and 'qué paja'."
+  content_pillars:
+    - "Sustainable Andean Fashion"
+    - "Peruvian Gastronomy"
+    - "Hidden Urban Gems in Lima"
+    - "Travel"
+
+# Second example persona with all fields filled (gen_ideas, gen_images with persona key "alex").
+alex:
+  id: "alex_demo"
+  name: "Alex"
+  location: "Barcelona, Spain"
+  vibe: "Tech & Minimalism"
+  physical_description:
+    age_range: "28"
+    ancestry_expression:
+      region: "Mediterranean European"
+      phenotype_bias: "light olive, Southern European"
+      avoid_stereotype: true
+    facial_structure:
+      face_shape: "elongated oval with defined jaw"
+      cheekbone_projection: "moderate, angular"
+      jaw_width_ratio: "medium-narrow"
+      chin_shape: "slightly squared with soft edge"
+    eyes:
+      color: "hazel green-brown"
+      shape: "slightly hooded almond"
+      outer_corner_tilt: "neutral"
+      spacing: "average"
+      asymmetry: "subtle natural difference"
+    nose:
+      bridge: "straight, narrow"
+      width: "medium"
+      tip: "defined, slightly angular"
+    lips:
+      upper_lip: "medium thickness"
+      lower_lip: "medium"
+      cupid_bow: "defined"
+    eyebrows:
+      density: "medium-full"
+      arch: "soft arch"
+      thickness: "natural"
+    skin:
+      tone: "warm neutral, light olive"
+      variation: "even with slight variation"
+      texture: "visible pores, natural"
+      sun_exposure: "light tan"
+    hair:
+      base_color: "dark brown"
+      root_color: "dark brown"
+      wave_pattern: "straight to slight wave"
+      density: "medium"
+      parting: "side or center"
+    body:
+      build: "slim, natural"
+      shoulder_width: "proportionate"
+      muscle_definition: "subtle"
+    proportions:
+      eye_to_eye_distance: "one eye width"
+      nose_width_relative_to_eyes: "slightly narrower"
+      face_height_to_width_ratio: "1.35"
+  personality: "Calm, curious, likes clean aesthetics. Speaks in a measured tone. Enjoys routines and minimalism."
+  content_pillars:
+    - "Productivity"
+    - "Minimal Design"
+    - "Travel"

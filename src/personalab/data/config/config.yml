@@ -1,0 +1,77 @@
+project:
+  name: "Peruvian Influencer Studio"
+  version: "0.1.0"
+
+paths:
+  output: "./generated_content"
+  references: "./references"
+
+models:
+  text:
+    provider: "gemini"
+    model_name: "gemini-3-flash-preview"
+  image:
+    provider: "gemini"
+    model_name: "gemini-3-pro-image-preview"
+  video:
+    provider: "gemini"
+    model_name: "veo-3.1-fast-generate-preview"
+
+generation:
+  image:
+    aspect_ratio: "4:5"
+  video:
+    resolution: "1080p"
+    aspect_ratio: "9:16"
+  search:
+    enabled: true
+    region: "PE"
+
+evaluation:
+  embedding:
+    backend: "arcface"
+    model_name: "buffalo_l"
+    similarity_threshold: 0.55
+  geometric:
+    enabled: true
+    max_normalized_error: 0.08
+  scoring:
+    weights:
+      embedding: 0.7
+      geometric: 0.3
+    accept_threshold: 0.55
+    retry_threshold: 0.35
+    policy_mode: "composite_only"
+  retry:
+    max_attempts: 3
+  drift:
+    enabled: true
+    log_dir: "./generated_content/drift"
+  video:
+    enabled: true
+    max_frames: 8
+    frame_strategy: "uniform"
+    scoring:
+      aggregation: "mean"
+  quality:
+    enabled: true
+    sharpness:
+      min_ratio: 0.4
+    illumination:
+      max_histogram_distance: 0.35
+      method: "bhattacharyya"
+    post_processing:
+      auto_sharpen: false
+      auto_super_res: false
+      max_embedding_std: 0.06
+      max_geometric_variance: 0.002
+
+instagram_realism:
+  enabled: true
+  jpeg_quality: 88
+  noise_sigma: 2.2
+  wb_shift: [1.02, 0.99, 1.00]
+  highlight_clip_p: 99.5
+  sharpen_amount: -0.18
+  chroma_aberration_px: 0.35
+  downscale_max_side: 2048

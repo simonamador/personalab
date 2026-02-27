@@ -1,0 +1,68 @@
+image_scenarios:
+  metadata:
+    format_version: "1.0"
+    target_platform: "Instagram"
+    aesthetic: "Authentic UGC / Shot on iPhone"
+
+  identity_lock: >
+    IDENTITY LOCK (non-negotiable):
+    - Depict the exact same person as the FIRST reference image.
+    - Preserve facial geometry: jawline, nose width/bridge/tip, eyebrow thickness/shape,
+      eye spacing, lip thickness, hairline.
+    - Do not change age, ethnicity, or facial proportions.
+    - No beautification or "generic influencer face".
+  
+  static_quality_constraints:
+    camera_specs: "Apple iPhone 15 Pro, 24mm main lens, handheld, auto-HDR"
+    visual_style: >
+      Casual mobile photography, slightly imperfect composition,
+      natural uneven lighting, mild exposure inconsistencies,
+      subtle sensor noise, smartphone HDR artifacts,
+      gentle rolling shutter feel, mild motion blur in background,
+      slight lens distortion, mild vignette, mild rolling shutter,
+      mirror surface imperfections (dust, micro-scratches),
+      mild phone HDR halos around window edges.
+    rendering_rules: >
+      Preserve natural skin texture (pores visible), micro asymmetry in face,
+      slight under-eye shadows, natural smile imperfections (teeth not perfectly uniform),
+      realistic hair flyaways, mild highlight clipping on bright areas,
+      subtle chromatic aberration, slight lens softness.
+      Mirror selfie realism: correct hand anatomy and believable phone grip,
+      realistic mirror reflections (minor distortion, dust specks, faint smudges),
+      slight glare/flare on mirror, subtle perspective mismatch typical of handheld selfies,
+      avoid overly symmetrical composition, allow for natural framing imperfections.
+    restrictions: >
+      No cinematic color grading, no studio lighting,
+      no excessive sharpness, no airbrushed skin,
+      no extreme depth-of-field bokeh,
+      no symmetry perfection, no "beauty retouch" look.
+      no showroom/catalog staging, no perfectly arranged props,
+      no overly clean mirror surface, no perfect hands or overly smooth skin.
+
+  dynamic_identity:
+    person_details: "${SUBJECT_DESCRIPTION}"
+    reference_check: >
+      The FIRST provided reference image defines identity. Every output MUST depict
+      the exact same person. Do not recast.
+    expression_variation: >
+      Allow subtle changes in smile intensity, slight asymmetry in mouth corners,
+      occasional blink or half-blink, subtle squint in sun.
+
+  dynamic_context:
+    scene: "${SCENE_DESCRIPTION}"
+    outfit: "${CLOTHING_DETAILS}"
+    framing: "${SHOT_TYPE}"
+
+video_scenarios:
+  prompt_template: >
+    Single continuous shot, handheld iPhone POV, vertical 9:16.
+
+    Subject: ${SUBJECT_DESCRIPTION}
+
+    Scene: ${LOCATION_DETAILS}. ${ACTION_DETAILS}.
+    Expression and mood: ${MOOD_AND_FACE_EXPRESSION}.
+
+    Camera: Shaky handheld motion, natural micro-jitters, quick focus hunting,
+    auto-exposure adjustments. No cuts, no transitions, one unbroken take.
+    No drone shots, no slow-motion, no professional color grading.
+    Realistic mobile video look with subtle digital stabilization artifacts.

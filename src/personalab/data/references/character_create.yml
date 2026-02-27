@@ -1,0 +1,349 @@
+anchor_frontal_neutral:
+  purpose: "Base facial reference. Defines symmetry, eye distance, nose shape and core proportions."
+
+  identity_lock:
+    ethnicity_expression: "subtle Latin American features without caricature"
+    avoid_beauty_prior: true
+    realism_priority: "natural human variation over commercial attractiveness"
+
+  subject:
+    description: "${PHYSICAL_DESCRIPTION}"
+    expression: "neutral, relaxed face, mouth closed"
+    gaze: "directly into camera"
+    accessories: "none"
+    hairstyle: "consistent base hairstyle (same parting, same wave pattern, same volume)"
+
+  framing:
+    shot_type: "tight headshot"
+    crop: "top of head to upper shoulders"
+    angle: "frontal"
+    composition: "slightly off-center (2-5%) with a tiny natural head tilt (1-2 degrees)"
+
+  posture:
+    head_position: "upright, natural alignment (not perfectly symmetrical)"
+    shoulders: "relaxed and squared"
+
+  background:
+    type: "neutral interior wall with subtle texture (off-white / warm gray), softly blurred"
+    color_palette: "warm neutral tones"
+    avoid:
+      - "pure seamless white studio"
+      - "perfect gradient backdrop"
+      - "busy background elements"
+
+  lighting:
+    style: "window light portrait (open shade / doorway diffusion)"
+    direction: "key light 30-45 degrees from camera-left, soft fill from opposite side"
+    quality: "natural daylight, gentle contrast, not perfectly even"
+    asymmetry: "subtle uneven light distribution (real-world)"
+    skin_texture_visibility: "high but irregular (pores vary by area, no smoothing)"
+    photographic_style: "unretouched RAW portrait, natural contrast, low sharpening"
+    micro_details:
+      - "mild redness around nose and cheeks"
+      - "subtle uneven skin tone and tiny sun speckles"
+      - "slight under-eye natural shadowing"
+      - "baby hairs and flyaways visible"
+      - "tiny eyebrow asymmetry and eyelid asymmetry preserved"
+      - "natural lip texture (not overly smooth)"
+    imperfection_control: "no facial symmetry correction, no digital smoothing, no plastic sheen"
+    eye_realism:
+      - "natural catchlights (not perfectly symmetrical)"
+      - "no hyper-sharp iris detail"
+      - "natural sclera variation (not pure white)"
+
+  camera:
+    lens: "85mm"
+    aperture: "f2.2"
+    depth_of_field: "shallow but not extreme"
+    resolution: "high resolution DSLR RAW photograph (realistic, not over-sharpened)"
+    rendering:
+      - "subtle film grain"
+      - "mild lens softness"
+      - "very subtle chromatic aberration (real lens behavior)"
+
+  restrictions:
+    - "no heavy makeup"
+    - "no glasses"
+    - "no hats"
+    - "no beauty filters"
+    - "no stylization or CGI"
+    - "no exaggerated features"
+    - "no extreme shadows"
+    - "no background distractions"
+    - "no pure seamless white studio look"
+    - "no perfectly centered symmetry"
+    - "no porcelain or waxy skin"
+    - "no overly clean, identical eye reflections"
+
+
+
+sculptor_45_degree:
+  purpose: "Defines facial structure in 3D. Cheekbones, jawline projection and nose depth."
+
+  identity_lock:
+    ethnicity_expression: "subtle Latin American features without caricature"
+    avoid_beauty_prior: true
+    realism_priority: "natural human variation over commercial attractiveness"
+
+  subject:
+    description: "${PHYSICAL_DESCRIPTION}"
+    expression: "neutral and relaxed"
+    gaze: "slightly off-camera"
+    accessories: "none"
+    hairstyle: "same as anchor image (same parting, same wave pattern, same volume)"
+
+  framing:
+    shot_type: "portrait"
+    crop: "head and upper shoulders"
+    angle: "45 degree turn (three-quarter view)"
+    composition: "natural framing, not perfectly centered"
+
+  posture:
+    head_position: "slightly rotated, natural neck alignment"
+    shoulders: "naturally aligned with body"
+
+  background:
+    type: "neutral interior wall with subtle texture (off-white / warm gray), softly blurred"
+    color_palette: "warm neutral"
+    avoid:
+      - "pure seamless white studio"
+      - "perfect gradient backdrop"
+
+  lighting:
+    style: "window light portrait"
+    direction: "key light 45 degrees from camera-left, gentle falloff across face"
+    quality: "natural daylight, moderate contrast, realistic shadow falloff"
+    asymmetry: "visible but soft shadowing to define facial depth"
+    skin_texture_visibility: "high realism (no smoothing)"
+    photographic_style: "unretouched RAW portrait, low sharpening"
+    micro_details:
+      - "subtle natural asymmetry"
+      - "real skin texture variation"
+      - "baby hairs visible near hairline"
+      - "minor under-eye natural shadows"
+      - "natural lip texture"
+    eye_realism:
+      - "natural catchlights (not identical between eyes)"
+      - "no hyper-sharp iris"
+
+  camera:
+    lens: "85mm"
+    aperture: "f2.2"
+    depth_of_field: "shallow"
+    resolution: "high resolution DSLR RAW photograph (realistic, not over-sharpened)"
+    rendering:
+      - "subtle film grain"
+      - "mild lens softness"
+      - "very subtle chromatic aberration"
+
+  restrictions:
+    - "no dramatic studio lighting"
+    - "no extreme contour makeup"
+    - "no stylized photography"
+    - "no facial distortion"
+    - "no cartoon or digital art look"
+    - "no pure seamless white studio look"
+    - "no porcelain or waxy skin"
+    - "no over-sharpened eyes"
+
+
+
+expression_smile:
+  purpose: "Captures authentic facial muscle movement during a real smile while preserving identity."
+
+  identity_lock:
+    ethnicity_expression: "subtle Latin American features without caricature"
+    avoid_beauty_prior: true
+    realism_priority: "natural human variation over commercial attractiveness"
+
+  subject:
+    description: "${PHYSICAL_DESCRIPTION}"
+    expression: "genuine natural smile, moderate intensity (not wide), cheeks slightly raised"
+    teeth_visibility: "upper teeth partially visible, natural alignment"
+    gaze: "into camera or slightly off-camera"
+    accessories: "none"
+    hairstyle: "same base hairstyle (same parting, same wave pattern, same volume)"
+
+  framing:
+    shot_type: "portrait"
+    crop: "head and upper torso"
+    angle: "frontal or slight 3/4"
+    composition: "natural framing, not perfectly centered"
+
+  posture:
+    head_position: "natural relaxed alignment"
+    shoulders: "relaxed"
+
+  background:
+    type: "neutral interior wall with subtle texture OR soft outdoor open shade background, softly blurred"
+    color_palette: "warm neutral tones"
+    avoid:
+      - "pure seamless white studio"
+      - "perfect gradient backdrop"
+
+  lighting:
+    style: "natural daylight portrait (open shade / window light)"
+    direction: "soft key light 30-45 degrees, gentle fill"
+    quality: "realistic, mild contrast, not perfectly even"
+    skin_texture_visibility: "visible, no smoothing"
+    photographic_style: "unretouched RAW portrait, low sharpening"
+    micro_details:
+      - "subtle natural asymmetry in smile"
+      - "real skin texture variation"
+      - "baby hairs and flyaways visible"
+      - "minor under-eye natural shadows"
+      - "natural lip texture"
+    imperfection_control: "no smile symmetry correction, no beauty retouching"
+    teeth_realism:
+      - "no hyper-white teeth"
+      - "no perfectly aligned teeth"
+      - "natural tooth texture and slight variation"
+
+  camera:
+    lens: "85mm"
+    aperture: "f2.2"
+    depth_of_field: "shallow"
+    resolution: "high resolution DSLR RAW photograph (realistic, not over-sharpened)"
+    rendering:
+      - "subtle film grain"
+      - "mild lens softness"
+
+  restrictions:
+    - "no forced smile"
+    - "no wide grin"
+    - "no exaggerated teeth"
+    - "no beauty filter"
+    - "no airbrushed skin"
+    - "no glamour studio effect"
+    - "no symmetrical smile correction"
+    - "no pure seamless white studio look"
+    - "no porcelain or waxy skin"
+
+
+
+silhouette_mid_body:
+  purpose: "Defines body proportions, shoulder width, neck length and overall build."
+
+  identity_lock:
+    ethnicity_expression: "subtle Latin American features without caricature"
+    avoid_beauty_prior: true
+    realism_priority: "natural human variation over commercial attractiveness"
+
+  subject:
+    description: "${PHYSICAL_DESCRIPTION}"
+    expression: "neutral"
+    clothing: "simple everyday fitted clothing, natural fabric texture (no fashion editorial styling)"
+    accessories: "none"
+    hairstyle: "same base hairstyle (same parting, same wave pattern, same volume)"
+
+  framing:
+    shot_type: "waist-up or full body"
+    angle: "frontal or slight 3/4"
+    composition: "natural framing, not perfectly centered"
+
+  posture:
+    stance: "natural relaxed standing"
+    arms: "resting naturally at sides (hands visible, relaxed)"
+
+  background:
+    type: "neutral interior wall with subtle texture (off-white / warm gray), softly blurred"
+    color_palette: "warm neutral"
+    avoid:
+      - "pure seamless white studio"
+      - "perfect gradient backdrop"
+
+  lighting:
+    style: "natural daylight portrait (window light / open shade)"
+    direction: "key light 30-45 degrees with soft fill"
+    quality: "realistic, mild contrast"
+    photographic_style: "unretouched RAW portrait, low sharpening"
+    fabric_realism: "visible weave and wrinkles, not perfectly smooth"
+    micro_details:
+      - "subtle natural asymmetry"
+      - "real skin texture variation"
+      - "baby hairs visible"
+      - "minor under-eye natural shadows"
+
+  camera:
+    lens: "50mm"
+    aperture: "f3.2"
+    depth_of_field: "moderate"
+    resolution: "high resolution DSLR RAW photograph (realistic, not over-sharpened)"
+    rendering:
+      - "subtle film grain"
+      - "mild lens softness"
+
+  restrictions:
+    - "no exaggerated muscularity"
+    - "no unrealistic thinness"
+    - "no dramatic fashion posing"
+    - "no oversized clothing"
+    - "no stylized proportions"
+    - "no pure seamless white studio look"
+    - "no porcelain or waxy skin"
+
+
+
+realism_natural_light:
+  purpose: "Captures real skin texture and true hair color under sunlight without distorting identity."
+
+  identity_lock:
+    ethnicity_expression: "subtle Latin American features without caricature"
+    avoid_beauty_prior: true
+    realism_priority: "natural human variation over commercial attractiveness"
+
+  subject:
+    description: "${PHYSICAL_DESCRIPTION}"
+    expression: "natural relaxed expression"
+    makeup: "minimal or none"
+    hairstyle: "same base hairstyle (same parting, same wave pattern, same volume)"
+
+  framing:
+    shot_type: "portrait"
+    angle: "frontal or slight 3/4"
+    composition: "natural framing, not perfectly centered"
+
+  posture:
+    head_position: "natural"
+    body_position: "relaxed"
+
+  background:
+    type: "outdoor open shade (bright ambient light), softly blurred"
+    environment: "sunlit exterior but subject is in open shade (no harsh direct sun on face)"
+
+  lighting:
+    style: "open shade outdoors (sky diffusion), natural bounce fill"
+    direction: "soft side-light from ambient sky, gentle fill from ground bounce"
+    quality: "high realism, mild contrast, no harsh shadows"
+    skin_texture_visibility: "very high (pores, natural texture, uneven tone)"
+    photographic_style: "unretouched RAW portrait, low sharpening"
+    micro_details:
+      - "subtle natural asymmetry"
+      - "real skin texture variation"
+      - "baby hairs and flyaways visible"
+      - "minor under-eye natural shadows"
+      - "mild redness around nose and cheeks"
+      - "subtle uneven skin tone and tiny sun speckles"
+    environmental_effects:
+      - "natural shadow falloff"
+      - "minor highlight clipping (real camera)"
+      - "subtle sensor noise"
+
+  camera:
+    lens: "85mm"
+    aperture: "f2.2"
+    depth_of_field: "shallow"
+    resolution: "high resolution DSLR RAW photograph (realistic, not over-sharpened)"
+    rendering:
+      - "subtle film grain"
+      - "mild lens softness"
+      - "very subtle chromatic aberration"
+
+  restrictions:
+    - "no studio lighting"
+    - "no harsh direct sunlight on face"
+    - "no HDR exaggeration"
+    - "no glamour retouching"
+    - "no porcelain skin"
+    - "no artificial color grading"
+    - "no over-sharpened eyes or hair"
