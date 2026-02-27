@@ -30,12 +30,9 @@ src/personalab/       # Library source (domain-based structure)
 scripts/              # CLI entry points
 examples/             # Runnable examples
 tests/                # Unit tests (mirrors src/ domain structure)
-.cursor/rules/        # Architecture rules and coding conventions
 ```
 
 ## Architecture rules
-
-Please read [`.cursor/rules/architecture_rules.md`](.cursor/rules/architecture_rules.md) before contributing. Key points:
 
 1. **Organize by domain**, not by layer. Code that changes together lives together.
 2. **Dependency inversion**: high-level code depends on `LLMClient` (protocol), not SDK classes directly. Only adapters in `llm/` import provider SDKs.
